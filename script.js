@@ -12,7 +12,7 @@ const getHeaderHeight = () => {
    return height;
 }
 
-window.addEventListener('resize', adjustHeroSecHeight);
+
 
 const adjustHeroSecHeight = () => {
    const navbarHeight = getNavbarHeight();
@@ -25,6 +25,8 @@ const adjustHeroSecHeight = () => {
 // Call the function initially to set the height
 adjustHeroSecHeight();
 
+
+window.addEventListener('resize', adjustHeroSecHeight);
 // ADJUST HERO HEIGH CODE ENDS HERE
 
 
