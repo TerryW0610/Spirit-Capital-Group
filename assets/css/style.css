@@ -140,6 +140,7 @@ header {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
+  color: white;
 }
 
 
@@ -149,11 +150,11 @@ header {
 }
 
 #navbar_items li a:hover{
-  color: var(--blue-color)
+  color: var(--blue-color);
 }
 
 .active {
-  color: var(--blue-color)
+  color: var(--blue-color);
 }
 
 
