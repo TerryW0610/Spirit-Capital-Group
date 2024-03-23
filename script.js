@@ -1,31 +1,53 @@
 // ADJUST HERO HEIGHT CODE 
+const navbar = document.getElementById('navbar');
+const header = document.getElementById('price_check');
+const heroSec = document.getElementById('hero_sec');
+const aboutSec = document.getElementById('about_sec');
+
+// Throttle function to limit the number of times a function is called over time
+function throttle(func, limit) {
+   let inThrottle;
+   return function () {
+      const args = arguments;
+      if (!inThrottle) {
+         func.apply(this, args);
+         inThrottle = true;
+         setTimeout(() => inThrottle = false, limit);
+      }
+   }
+}
+
 const getNavbarHeight = () => {
-   const navbar = document.getElementById('navbar');
    const style = window.getComputedStyle(navbar);
-   const height = parseFloat(style.height);
-   return height;
+   return parseFloat(style.height);
 }
 
 const getHeaderHeight = () => {
-   const header = document.getElementById('price_check');
-   const style = window.getComputedStyle(header);
-   const height = parseFloat(style.height);
-   return height;
+   return header.offsetHeight;
 }
 
 const adjustHeroSecHeight = () => {
    const navbarHeight = getNavbarHeight();
    const headerHeight = getHeaderHeight();
-   const heroSec = document.getElementById('hero_sec');
    const viewportHeight = window.innerHeight;
-   heroSec.style.height = `${viewportHeight - (headerHeight)}px`;
+
+   if (heroSec) {
+      heroSec.style.height = `${viewportHeight - headerHeight}px`;
+   }
+
+   if (aboutSec) {
+      aboutSec.style.height = `${viewportHeight - 650}px`;
+   }
 }
 
 // Call the function initially to set the height
 adjustHeroSecHeight();
 
 
-window.addEventListener('resize', adjustHeroSecHeight);
+const throttledAdjustHeroSecHeight = throttle(adjustHeroSecHeight, 100);
+
+// Call the function initially to set the height
+adjustHeroSecHeight();
 
 
 // Function to check the scroll position and change the navbar's position
