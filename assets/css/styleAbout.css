@@ -1,0 +1,126 @@
+:root {
+  --dark-bg-font: #fff;
+  --light-bg-font: #000;
+
+  --gold-color: rgb(255, 230, 0);
+  --blue-color: #5da6ff;
+  --navy-blue-color: #184274;
+  --font-lato: "Lato", sans-serif;
+  --font-cardo: "Cardo", Sans-serif;
+  --border-lines-gray: #424242;
+  --border-lines-lightGray: rgb(165, 165, 165);
+}
+
+
+#about_sec {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url(/assets/images/about-banner.jpg);
+  background-position: 53.5% 0%;
+  /* background-position: center center; */
+  background-repeat: no-repeat;
+  background-size: 300% 100%;
+  display: flex;
+  align-items: baseline;
+  height: calc(50vh - 138px);
+  position: relative;
+  z-index: -2;
+
+  padding-block-start: 20px;
+  padding-block-end: 40px;
+  padding-inline-start: 5%;
+  padding-inline-end: 10%;
+}
+
+
+.info_box {
+  width: 100%;
+  align-self: flex-end;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#about_t h3{
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.seperator{
+  width: 36px;
+  display: flex;
+  margin: 0;
+  direction: ltr;
+
+  border-width: 2.7px;
+  border-style: solid;
+  border-color: #BF0A30;
+
+  /* margin: 0px 0px 15px 0px; */
+}
+
+#about_txt{
+  font-size: 9px;
+  font-weight: 700;
+  font-family: var(--font-lato);
+  text-transform: uppercase;
+  letter-spacing: 3.15px;
+  color: white;
+}
+
+#about_p a{
+  color: white;
+  text-decoration: none;
+}
+
+#about_p a:visited{
+  color: white;
+}
+
+
+#about_para_sec {
+  padding-block-start: 40px;
+  padding-block-end: 20px;
+  padding-inline-start: 5%;
+  padding-inline-end: 10%;
+
+
+}
+
+#about_para_title h3{
+  font-size: 25px;
+  color: var(--navy-blue-color)
+}
+
+#about_paragraph{
+  color: #7a7a7a;
+  font-size: 16px;
+
+  margin-top: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+strong{
+  font-weight: bolder;
+}
+
+red {
+  color: #bf0a30;
+}
+
+.about_cards {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.about_cards .card_ctn{
+  border-style: none;
+  background-color: #F3f3f3;
+}
+
+.about_cards .card_info h4 {
+  color: #184274;
+  font-size: 20px;
+}

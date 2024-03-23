@@ -56,7 +56,7 @@ h2 {
 h3 {
   font-size: 30px;
   font-family: var(--font-cardo);
-  
+  color: #E2E2E2;
   font-size: 30px;
   font-weight: 400;
   line-height: 1.2em;
@@ -184,7 +184,7 @@ header {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
-  color: white;
+  color: white
 }
 
 
@@ -198,7 +198,7 @@ header {
 }
 
 .active {
-  color: var(--blue-color);
+  color: var(--blue-color) !important;
 }
 
 
@@ -641,7 +641,7 @@ header {
 
 }
 
-.gold_guide_titles.sec_2 {
+.sec_2 {
   text-align: center;
 }
 
@@ -944,8 +944,12 @@ footer img {
   gap: 20px 20px;
 }
 
+.tp-block {
+  align-items: center;
+  justify-content: space-between;
+}
+
 .footer_info p {
-  margin-bottom: 1rem;
   color: white;
 }
 
@@ -992,7 +996,7 @@ footer img {
 
 
 .rights_reserved {
-  padding-block-start: 10%;
+  padding-block-start: 20%;
   font-size: 14px !important;
   text-align: center;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
