@@ -36,37 +36,57 @@ const adjustHeroSecHeight = () => {
    }
 
    if (aboutSec) {
-      aboutSec.style.height = `${viewportHeight - 600}px`;
+      aboutSec.style.height = `${viewportHeight - 680}px`;
    }
 }
 
 // Call the function initially to set the height
-adjustHeroSecHeight();
+// adjustHeroSecHeight();
 
 
 const throttledAdjustHeroSecHeight = throttle(adjustHeroSecHeight, 100);
 
 
 // Function to check the scroll position and change the navbar's position
+// Declare a variable for the placeholder
+let headerPlaceholder;
+
 const checkScrollPosition = () => {
    const header = document.getElementById('price_check');
    const navbar = document.getElementById('navbar');
    const headerHeight = header.offsetHeight;
+   const navbarHeight = navbar.offsetHeight;
 
-   // Check if the user has scrolled past the header
    if (window.scrollY > headerHeight) {
-      // Change the navbar's position to fixed and add a top margin to prevent overlap
       navbar.style.position = 'fixed';
       navbar.style.marginTop = '-' + headerHeight + 'px';
+
+      if (window.location.pathname.includes('about.html')) {
+         if (!headerPlaceholder) {
+            headerPlaceholder = document.createElement('div');
+            headerPlaceholder.style.height = `${navbarHeight}px`;
+            headerPlaceholder.style.visibility = 'hidden';
+         }
+      }
+
+      aboutSec.parentNode.insertBefore(headerPlaceholder, aboutSec);
+      
    } else {
-      // Reset the navbar's position when the user scrolls back up
       navbar.style.position = '';
       navbar.style.top = '';
       navbar.style.marginTop = '';
+
+      if (window.location.pathname.includes('about.html')) {
+         if (headerPlaceholder) {
+            headerPlaceholder.parentNode.removeChild(headerPlaceholder);
+            headerPlaceholder = null;
+         }
+      }
    }
+
 };
 
 // Attach the event listener to the window's scroll event
 window.addEventListener('scroll', checkScrollPosition);
-window.addEventListener('resize', adjustHeroSecHeight);
+// window.addEventListener('resize', adjustHeroSecHeight);
 // ADJUST HERO HEIGH CODE ENDS HERE
