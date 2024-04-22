@@ -89,19 +89,23 @@ const checkScrollPosition = () => {
 window.addEventListener('scroll', checkScrollPosition);
 
 
-const container = document.getElementById("review_ctn");
-const options = {
-   Autoplay: {
-      timeout: 3000,
-      showProgress: false,
-      pauseOnHover: false,
-   },
-   Navigation: false,
-   Dots: false,
 
+if (window.location.pathname.includes('index.html')) {
 
-};
+   const container = document.getElementById("review_ctn");
 
-new Carousel(container, options, { Autoplay });
+   const options = {
+      Autoplay: {
+         timeout: 5000,
+         showProgress: false,
+         pauseOnHover: false,
+      },
+      Navigation: false,
+      Dots: false,
+   };
+
+   new Carousel(container, options, { Autoplay });
+}
+
 // window.addEventListener('resize', adjustHeroSecHeight);
 // ADJUST HERO HEIGH CODE ENDS HERE
