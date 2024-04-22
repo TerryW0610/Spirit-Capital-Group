@@ -174,9 +174,19 @@
     
   }
 
+  .f-carousel {
+    --f-carousel-slide-width: calc(100% / 3) !important;
+  }
+
   .review_sec {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
+
+  }
+
+  #review_comment {
+    font-family: var(--font-lato);
+    font-size: 16px;
+    width: 400px;
+  
   }
   /* ! TESTIMONIALS SECTION */
 

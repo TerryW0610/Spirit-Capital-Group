@@ -522,6 +522,9 @@ header {
   display: flex;
   width: 100%;
   height: 100%;
+
+  padding: 40px;
+  margin-bottom: 60px;
 }
 
 .scrollable-container {
@@ -537,20 +540,14 @@ header {
   /* Hide scrollbar for Chrome, Safari, and other WebKit browsers */
 }
 
+.f-carousel {
+  --f-carousel-spacing: 0px !important;
+}
+
 .review_sec {
   display: flex;
   flex-direction: column;
-  padding: 40px;
   gap: 20px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  user-select: none;
-  flex: 0 0 auto;
-  /* This will prevent the divs from shrinking */
-  /* scroll-snap-align: start; */
-  width: 100%;
-  word-break: break-word;
-  border-right: solid 1px rgb(236, 236, 236);
 }
 
 #review_comment {
