@@ -27,7 +27,6 @@ const getHeaderHeight = () => {
 }
 
 const adjustHeroSecHeight = () => {
-   const navbarHeight = getNavbarHeight();
    const headerHeight = getHeaderHeight();
    const viewportHeight = window.innerHeight;
 
@@ -41,7 +40,7 @@ const adjustHeroSecHeight = () => {
 }
 
 // Call the function initially to set the height
-// adjustHeroSecHeight();
+adjustHeroSecHeight();
 
 
 const throttledAdjustHeroSecHeight = throttle(adjustHeroSecHeight, 100);
@@ -67,10 +66,10 @@ const checkScrollPosition = () => {
             headerPlaceholder.style.height = `${navbarHeight}px`;
             headerPlaceholder.style.visibility = 'hidden';
          }
+         aboutSec.parentNode.insertBefore(headerPlaceholder, aboutSec);
       }
 
-      aboutSec.parentNode.insertBefore(headerPlaceholder, aboutSec);
-      
+
    } else {
       navbar.style.position = '';
       navbar.style.top = '';
@@ -88,5 +87,25 @@ const checkScrollPosition = () => {
 
 // Attach the event listener to the window's scroll event
 window.addEventListener('scroll', checkScrollPosition);
+
+
+
+if (window.location.pathname.includes('index.html')) {
+
+   const container = document.getElementById("review_ctn");
+
+   const options = {
+      Autoplay: {
+         timeout: 5000,
+         showProgress: false,
+         pauseOnHover: false,
+      },
+      Navigation: false,
+      Dots: false,
+   };
+
+   new Carousel(container, options, { Autoplay });
+}
+
 // window.addEventListener('resize', adjustHeroSecHeight);
 // ADJUST HERO HEIGH CODE ENDS HERE
