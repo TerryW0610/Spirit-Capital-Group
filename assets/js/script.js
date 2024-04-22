@@ -107,5 +107,16 @@ if (window.location.pathname.includes('index.html')) {
    new Carousel(container, options, { Autoplay });
 }
 
+// document.querySelectorAll('.card_img_ctn').forEach(function(card) {
+//    card.addEventListener('mouseover', function() {
+//        setTimeout(function() {
+//            card.querySelector('.overlay').style.opacity = '1';
+//        }, 500); // Delay in milliseconds
+//    });
+
+//    card.addEventListener('mouseout', function() {
+//        card.querySelector('.overlay').style.opacity = '0';
+//    });
+// });
 // window.addEventListener('resize', adjustHeroSecHeight);
 // ADJUST HERO HEIGH CODE ENDS HERE
