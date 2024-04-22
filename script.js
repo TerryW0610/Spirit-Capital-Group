@@ -36,7 +36,7 @@ const adjustHeroSecHeight = () => {
    }
 
    if (aboutSec) {
-      aboutSec.style.height = `${viewportHeight - 680}px`;
+      aboutSec.style.height = `${viewportHeight - 600}px`;
    }
 }
 
@@ -45,9 +45,6 @@ adjustHeroSecHeight();
 
 
 const throttledAdjustHeroSecHeight = throttle(adjustHeroSecHeight, 100);
-
-// Call the function initially to set the height
-adjustHeroSecHeight();
 
 
 // Function to check the scroll position and change the navbar's position
@@ -71,5 +68,5 @@ const checkScrollPosition = () => {
 
 // Attach the event listener to the window's scroll event
 window.addEventListener('scroll', checkScrollPosition);
-
+window.addEventListener('resize', adjustHeroSecHeight);
 // ADJUST HERO HEIGH CODE ENDS HERE
