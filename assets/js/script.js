@@ -34,9 +34,9 @@ const adjustHeroSecHeight = () => {
       heroSec.style.height = `${viewportHeight - headerHeight}px`;
    }
 
-   if (aboutSec) {
-      aboutSec.style.height = `${viewportHeight - 680}px`;
-   }
+   // if (aboutSec) {
+   //    aboutSec.style.height = `${viewportHeight - 780}px`;
+   // }
 }
 
 // Call the function initially to set the height
