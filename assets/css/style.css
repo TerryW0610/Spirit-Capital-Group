@@ -166,7 +166,7 @@ header {
 
   gap: 30px;
   padding: 20px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 
   color: white;
   background-color: black;
@@ -206,6 +206,9 @@ header {
   color: var(--blue-color) !important;
 }
 
+.green{
+  color: #e6ff01;
+}
 
 /* ! HERO SECTION  */
 

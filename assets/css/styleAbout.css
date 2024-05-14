@@ -87,13 +87,11 @@ red {
   color: var(--red-color);
 }
 
-#about_para_sec {
+#about_ctn{
   padding-block-start: 40px;
   padding-block-end: 20px;
   padding-inline-start: 5%;
   padding-inline-end: 5%;
-
-
 }
 
 #about_para_title h3{
@@ -119,6 +117,28 @@ red {
 
 #about_para_ctn img{
   width: 100%;
+}
+
+#about_para_2 p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+#about_para_2 ul{
+  font-family: "Lato", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  padding-left: 2rem;
+  
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+#about_para_2 ul li{
+
+  line-height: 1.5;
+  letter-spacing: 0.01em;
 }
 
 .about_cards {
@@ -240,22 +260,100 @@ red {
   flex-direction: column;
 }
 
-#side_menu {
-  border-left: 4px solid transparent;
-  transition: 200ms;
+.active_bar {
+  border-color: #BF0A30 !important;
+  color: #BF0A30;
 }
 
-#side_menu li a {
+#side_menu li {
+  border-left: 4px solid transparent;
+
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 16px;
   padding-right: 24px;
 
+  list-style-type: none;
+  cursor: pointer;
+}
+
+#side_menu li a {
   font-family: "Cardo", Sans-serif;
   font-weight: 700;
   line-height: 20px;
-  color: #BF0A30;
-  fill: #BF0A30; 
+}
 
-  transition: .4s;
+#menu_img{
+  margin-bottom: 40px;
+}
+
+#menu_img img{
+  max-width: 300px;
+}
+
+#menu_extras {
+  background-color: #003256;
+  padding: 35px 27px 35px 27px;
+  margin-bottom: 40px;
+  
+}
+#menu_question_sec {
+  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+#menu_extras h5{
+  color: #fff;
+  font-family: "Cardo", Sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.5em;
+
+  margin-bottom: 20px;
+}
+
+#menu_para {
+  color:  #fff;
+  font-family: "Lato", Sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+#menu_para p{
+  margin-bottom: 20px;
+}
+
+#menu_extras i {
+  color:  #fff;
+}
+#menu_buttons{
+  box-sizing: border-box;
+}
+#menu_extras a {
+  font-family: "Lato", Sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  letter-spacing: 3px;
+  
+  color: #fff;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #BF0A30;
+  border-radius: 0px 0px 0px 0px;
+
+  display: inline-block;
+  padding: 15px 30px 15px 30px;
+  text-align: center;
+  transition: all .3s;
+  cursor: pointer;
+}
+
+#menu_extras a:hover{
+  background-color: #BF0A30;
 }

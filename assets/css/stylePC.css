@@ -335,8 +335,4 @@
     flex-direction: row;
     width: 100%;
   }
-
-  #about_para_ctn{
-    display: flex;
-  }
 }
