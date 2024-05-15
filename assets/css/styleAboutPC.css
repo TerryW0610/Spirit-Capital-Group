@@ -72,5 +72,53 @@
   #about_para_2 ul{
     font-size: 18px;
   }
+
+  #about_cards_ctn {
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+  }
+
+  .card_ctn img {
+    height: 300px !important;
+  }
+
+  .buy_back_sec_ctn {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .buy_back_sec{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 20px;
+  
+    background-image: none;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+  padding-block-start: 40px;
+  padding-block-end: 40px;
+  padding-inline-start: 0%;
+  padding-inline-end: 0%;
+
+  width: 75%;
+  }
+
+  .buy_back_img_ctn  {
+    max-width: 400px;
+    max-height: 350px;
+  }
+
+  .buy_back_img_ctn img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
   
 }
