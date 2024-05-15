@@ -217,6 +217,11 @@ red {
   color: var(--red-color);
 }
 
+.buy_back_sec_ctn {
+  display: flex;
+  flex-direction: column;
+}
+
 .buy_back_sec{
   display: flex;
   flex-direction: column;
@@ -228,11 +233,6 @@ red {
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
-
-  padding-block-start: 40px;
-  padding-block-end: 80px;
-  padding-inline-start: 5%;
-  padding-inline-end: 5%;
 }
 
 .buy_back_sec h4{
