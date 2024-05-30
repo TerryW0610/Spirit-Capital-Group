@@ -107,7 +107,7 @@ if (window.location.pathname.includes('index.html')) {
    new Carousel(container, options, { Autoplay });
 }
 
-document.querySelector('#PMSel').addEventListener('click', function(event) {
+document.querySelector('#mobileSel').addEventListener('click', function(event) {
    // Prevent default action if necessary
    event.preventDefault();
    // Toggle the display style of the.PM_list div

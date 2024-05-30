@@ -57,6 +57,8 @@
     margin-top: 0px;
     position: absolute;
     z-index: 1;
+    max-width: max-content;
+    min-width: max-content;
   }
 
   .PMSel:hover .submenu {
