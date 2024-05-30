@@ -107,16 +107,15 @@ if (window.location.pathname.includes('index.html')) {
    new Carousel(container, options, { Autoplay });
 }
 
-// document.querySelectorAll('.card_img_ctn').forEach(function(card) {
-//    card.addEventListener('mouseover', function() {
-//        setTimeout(function() {
-//            card.querySelector('.overlay').style.opacity = '1';
-//        }, 500); // Delay in milliseconds
-//    });
-
-//    card.addEventListener('mouseout', function() {
-//        card.querySelector('.overlay').style.opacity = '0';
-//    });
-// });
-// window.addEventListener('resize', adjustHeroSecHeight);
+document.querySelector('#mobileSel').addEventListener('click', function(event) {
+   // Prevent default action if necessary
+   event.preventDefault();
+   // Toggle the display style of the.PM_list div
+   var submenu = document.querySelector('#PM_list');
+   if (submenu.style.display === 'block') {
+         submenu.style.display = 'none'; // Hide the list
+   } else {
+      submenu.style.display = 'block'; // Show the list
+   }
+});
 // ADJUST HERO HEIGH CODE ENDS HERE

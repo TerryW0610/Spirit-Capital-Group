@@ -189,7 +189,27 @@ header {
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
-  color: white
+  color: white;
+
+  display: flex;
+  gap: 5px;
+}
+
+.PMSel {
+  position: relative;
+}
+
+.submenu {
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #000;
+  margin-top: 20px;
+  max-width: max-content;
+  display: none;
+}
+
+.submenu a{
+  padding: 15px 20px 15px 20px;
 }
 
 
@@ -215,22 +235,12 @@ header {
 #hero_sec {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url(/assets/images/main-building.jpg);
   background-position: 53.5% 0%;
-  /* background-position: center center; */
-  background-repeat: no-repeat;
   background-size: 325% 100%;
-  display: flex;
-  justify-content: center;
-  height: calc(100vh - 138px);
   position: relative;
 }
 
 #hero_content {
-  width: 100%;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 50px;
 }
 
 #hero_blk_1 {
@@ -241,7 +251,7 @@ header {
   text-align: center;
   gap: 30px 20px;
   padding: 20px;
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 
 #hero_title h2 {
@@ -860,6 +870,33 @@ header {
 
 /* ! BUY BACK SECTION  */
 
+
+/* ! PRECIOUS METALS SECTION  */
+.precious_sec {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(/assets/images/precious-metal-banner.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 150px 4% 150px 4%;
+}
+
+.precious_content_ctn{
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  max-width: 1326px;
+}
+
+.precious_content h1 {
+  color: white;
+  font-family: "Cardo", Sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2em;
+}
+/* ! PRECIOUS METALS SECTION  */
 
 /* ! CURRENT NEWS SEC  */
 .white_bg {
