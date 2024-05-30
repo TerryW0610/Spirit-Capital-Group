@@ -31,11 +31,6 @@
     flex-direction: row;
     display: flex;
     list-style-type: none;
-
-    cursor: pointer;
-
-
-
     gap: 50px;
     padding: 20px;
     margin-bottom: 20px;
@@ -53,15 +48,30 @@
     text-decoration: none;
     color: white;
     transition: color ease-in-out 0.3s;
+
+    display: flex;
+    gap: 5px;
   }
 
+  .submenu {
+    margin-top: 0px;
+    position: absolute;
+    z-index: 1;
+  }
 
+  .PMSel:hover .submenu {
+    display: inline-block !important;
+  }
+  
   #navbar_itemsPC li a:visited {
     color: white;
-
   }
 
   #navbar_itemsPC li a:hover {
+    color: var(--blue-color);
+  }
+
+  #PM_listPC ul li:hover {
     color: var(--blue-color);
   }
 
@@ -89,14 +99,7 @@
 
   /* ! HERO SECTION  */
   #hero_sec {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url(/assets/images/main-building.jpg);
-    background-position: 53.5% 0%;
-    /* background-position: center center; */
-    background-repeat: no-repeat;
     background-size: 100% 100%;
-    display: flex;
-    justify-content: center;
-    height: calc(100vh - 138px);
     position: relative;
   }
 
