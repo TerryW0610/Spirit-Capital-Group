@@ -340,4 +340,15 @@
     flex-direction: row;
     width: 100%;
   }
+
+  /* ! PRECIOUS METALS  */
+  .precious_content_ctn{
+    max-width: 1326px;
+  }
+
+  .precious_content h1 {
+    font-size: 40px;
+  }
+
+  /* ! PRECIOUS METALS  */
 }

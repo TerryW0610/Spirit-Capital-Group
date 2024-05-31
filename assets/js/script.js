@@ -107,15 +107,17 @@ if (window.location.pathname.includes('index.html')) {
    new Carousel(container, options, { Autoplay });
 }
 
+let menuOpen = false;
+
 document.querySelector('#mobileSel').addEventListener('click', function(event) {
    // Prevent default action if necessary
    event.preventDefault();
-   // Toggle the display style of the.PM_list div
-   var submenu = document.querySelector('#PM_list');
-   if (submenu.style.display === 'block') {
-         submenu.style.display = 'none'; // Hide the list
-   } else {
-      submenu.style.display = 'block'; // Show the list
+   if (!menuOpen) {
+      // Toggle the display style of the.PM_list div
+      var submenu = document.querySelector('#PM_list');
+      submenu.style.display = 'block'
+      menuOpen = true;
    }
+
 });
 // ADJUST HERO HEIGH CODE ENDS HERE
