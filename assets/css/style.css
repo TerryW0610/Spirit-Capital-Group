@@ -873,13 +873,13 @@ header {
 
 /* ! PRECIOUS METALS SECTION  */
 .precious_sec {
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(/assets/images/precious-metal-banner.jpg);
-  background-position: top left;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)), url(/assets/images/precious-metal-banner.jpg);
+  background-position: top right;
   background-repeat: no-repeat;
   background-size: cover;
 
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-  padding: 150px 4% 150px 4%;
+  padding: 75px 4% 75px 4%;
 }
 
 .precious_content_ctn{
@@ -887,16 +887,53 @@ header {
   margin-left: auto;
   position: relative;
   max-width: 1326px;
-}
 
+  padding: 10px;
+}
+.precious_content{
+  margin-bottom: 20px;
+}
 .precious_content h1 {
   color: white;
   font-family: "Cardo", Sans-serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 25px;
   line-height: 1.2em;
 }
+
+.precious_btn{
+
+}
+
+.precious_btn button {
+  background: none;
+  background-color: #BF0A30;
+  color: white;
+  border: none;
+
+  padding: 15px 30px 15px 30px;
+
+  font-family: var( --font-lato);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  letter-spacing: 3px;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.precious_btn button:hover {
+  background-color: #0F182A;
+}
 /* ! PRECIOUS METALS SECTION  */
+
+/* ! GOLD AND SILVER SECTION  */
+.gold {
+  padding: 50px 4% 50px 4%;
+}
+
+/* ! GOLD AND SILVER SECTION  */
 
 /* ! CURRENT NEWS SEC  */
 .white_bg {
