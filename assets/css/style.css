@@ -929,8 +929,38 @@ header {
 /* ! PRECIOUS METALS SECTION  */
 
 /* ! GOLD AND SILVER SECTION  */
-.gold {
+
+.prices_ctn {
   padding: 50px 4% 50px 4%;
+}
+
+.prices_info_ctn {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+#price_title{
+  margin-bottom: 20px;
+}
+
+#price_title h2{
+  color: #003366;
+  font-family: "Cardo", Sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+#price_txt p {
+  color: #7A7A7A;
+  font-size: 16px;
+  text-align: center;
+  font-family: var(--font-lato);
+  line-height: 1.em;
 }
 
 /* ! GOLD AND SILVER SECTION  */
@@ -959,8 +989,7 @@ header {
   flex-direction: column;
 
   gap: 40px;
-  margin-top: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 #current_news_info h3 {
@@ -971,6 +1000,7 @@ header {
 
 #current_news_info h2 {
   text-wrap: balance;
+  margin-bottom: 20px;
 }
 
 #current_news_info p {
